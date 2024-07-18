@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page Responsiva</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <body>
+    <!--Cabeçalho-->
+     <header>
+         <div class="header">
+         <div class="logo-header">
+            <img src="img/logo.jpg" class="img_logo_header">
+         </div>
+       
+        </div>
+
+         <nav>
+        <a href="titulo" class="a_titulo">FASHIO EXPRESS</a>
+        </nav>
+    
+        <i class="material-icons" onclick="clickMenu()">menu</i>
+    </header>
+
+  <!--Menu Hamburguer-->
+    <menu id="itens">
+        <ul>
+            <li><a href="#home" onclick="clickMenu()">Home</a></li>
+            <li><a href="#produ" onclick="clickMenu()">Produtos</a></li>
+            <li><a href="#promo" onclick="clickMenu()">Promoções</a></li>
+            <li><a href="#contato" onclick="clickMenu()">Contato</a></li>
+            <li><a href="#about" onclick="clickMenu()">Sobre</a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <section id="bem-vindo">
+            <h1>Bem-vindo à Fashion Express!</h1>
+            <p>Na Fashion Express, oferecemos as últimas tendências da moda a preços acessíveis. Explore nossa coleção e descubra roupas que combinam estilo e conforto para todas as ocasiões.</p>
+        </section>
+
+        <!-- Slider -->
+        <h2></h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/casaco de pelinho.jpg" alt="Promoção 1">
+                    <h2>Em promoção </h2>
+                    <p>Jaqueta Feminina De Couro Pu De Pelúcia Com Forro De Lã</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/sueter feminino.jpg" alt="Promoção 2">
+                    <h2>Em promoção </h2>
+                    <p>Cardigan feminino de tricot amplo aberto</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/sueter preto masculino.jpg" alt="Promoção 3">
+                    <h2>Em promoção</h2>
+                    <p>O suéter masculino, modelo comfort básico</p>
+                </div>
+            </div>
+
+            <!-- Adicione os botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-container">
+                <div class="produto"
+                    data-descricao="O Suéter Masculino Modelo Casaco Cardigan Tricot botões Frontal Lã Premium, é a peça perfeita para quem busca unir estilo e conforto em dias mais frios">
+                    <img src="img/sueter preto masculino.jpg" alt="Produto 1">
+                    <h3>Suéter com botões</h3>
+                    <p>O suéter masculino, modelo comfort básico</p>
+                    <p>R$ 150,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="produto"
+                    data-descricao="Quando pensamos em charme, conforto e toque super macio, o Cardigan feminino de tricot amplo aberto | Maia´s surge na medida certa para compor um look arrasador ">
+                    <img src="img/sueter feminino.jpg" alt="Produto 2">
+                    <h3>Cardigan aberto</h3>
+                    <p>Cardigan feminino de tricot amplo aberto </p>
+                    <p>R$ 200,00</p>
+                </div>
+                <div class="produto"
+                    data-descricao="Proteja-se do frio com estilo e conforto com essa Jaqueta Feminina em Couro Forrada em Lã! Essa Jaqueta Feminina combina estilo e conforto em uma única peça.">
+                    <img src="img/casaco de pelinho.jpg" alt="Produto 3">
+                    <h3>Jaqueta de couro/pelucia</h3>
+                    <p> Jaqueta Feminina De Couro Pu De Pelúcia Com Forro De Lã</p>
+                    <p>R$ 299,00</p>
+
+                </div>
+                <div class="produtos-container">
+                    <div class="produto" data-descricao="">
+                        <img src="img/calça fler com rasgos.jpg" alt="Produto 1">
+                        <h3>Calça Wide Leg com rasgos</h3>
+                        <p>Calça wide leg Feminina cintura alta com rasgos</p>
+                        <p>R$ 170,00</p>
+                    </div>
+                </div>
+                <div class="produtos-container">
+                    <div class="produto" data-descricao="">
+                        <img src="img/calça marrom cargo com bolsos.jpg" alt="Produto 1">
+                        <h3>Calça Wide Leg Cargo</h3>
+                        <p>Calça Wide Leg Feminina Em Sarja Com Passantes Diferenciados E Bolsos Cargo Marrom</p>
+                        <p>R$ 140,00</p>
+                    </div>
+                    <div class="produtos-container">
+                        <div class="produto" data-descricao="">
+                            <img src="img/calça preta wide leg.jpg" alt="Produto 1">
+                            <h3>Calça Wide Leg preta</h3>
+                            <p>Calça Wide Leg Preta Feminina</p>
+                            <p>R$ 205,00</p>
+                        </div>
+                        <div class="produtos-container">
+                            <div class="produto" data-descricao="">
+                                <img src="img/caça preta wide leg com estrelas.jpg" alt="Produto 1">
+                                <h3>Calça Wide Leg preta com estrelas</h3>
+                                <p>Calça Wide Leg Preta Feminina estampa de Estrelas</p>
+                                <p>R$ 105,00</p>
+                            </div>
+        </section>
+
+
+        <!-- Modal -->
+        <div id="produtoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+
+
+        <!---Sobre a loja, visao e missao-->
+        <section id="about">
+            <h2>SOBRE A NOSSA LOJA</h2>
+            <p>Maia, uma jovem talentosa em moda e design, sonhava em ter sua própria loja de roupas. Ao encontrar uma
+                antiga loja fechada em sua cidade, decidiu transformá-la em um espaço vibrante e acolhedor, chamado
+                "Fashion Express". Com muito trabalho, Maia decorou e encheu a loja com suas criações únicas. Quando abriu, a
+                loja foi um sucesso, atraindo clientes que se inspiravam em sua paixão e criatividade</p>
+
+            <h4>Visão</h4>
+            <p>Ser a referência em moda rápida e acessível, trazendo as últimas tendências e oferecendo uma experiência de compra única e inspiradora para nossos clientes.</p>
+
+                <h4>Missão</h4>
+                <p>Proporcionar aos nossos clientes uma vasta seleção de roupas estilosas e de alta qualidade a preços acessíveis, com um serviço de atendimento excepcional, buscando continuamente inovar e melhorar nossa oferta de produtos e a experiência de compra.</p>
+        </section>
+        <section id="contato">
+            <h2>CONTATO</h2>
+            <p> <b>Entre em contato com nossa loja e faça seu pedido ja!!</p></b>
+            <p><b>Celular: (00) 0 00000000</p></b>
+            <p><b>Email:fashionexpress05@gmail.com</p></b>
+            <p><b>Instagram: fashion.express</p></b>
+
+        </section>
+
+                    <!---formulário-->
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <ul>
+                <li>
+                    <p> Nome completo</p>
+                </li>
+                <li><input type="text" name="name" required></li>
+                <li>
+                    <p>E-mail</p>
+                </li>
+                <li><input type="email" name="email" required></li>
+            </ul>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section id="countdown">
+        <a class="loja" href="">Inauguração da Loja em:</a>
+            <div id="timer">
+                <span id="days"></span> Dias
+                <span id="ho"></span> Horas
+                <span id="min"></span> Minutos
+                <span id="seg"></span> Segundos
+            </div>
+        </section>
+
+    <div class="content">
+        <!-- Conteúdo da página -->
+    </div>
+<div class="footerDiv">
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Email</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2024 Fashion Express <span class="designer"> loja </span>| Todos os direitos reservados</p>
+            </div>
+        </div>
+
+    </footer>
+</div>
+</main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</body>
+
+</html>
